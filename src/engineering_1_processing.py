@@ -58,7 +58,7 @@ def rainfall_humidity_stats(df):
         'humidity': ['mean']
     })
     
-    # Flatten column names (convert tuple keys to strings)
+
     agg_df.columns = [f"{col[0]}_{col[1]}" for col in agg_df.columns]
     
     return agg_df.to_dict()
